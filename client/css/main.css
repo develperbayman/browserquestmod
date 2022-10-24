@@ -135,7 +135,7 @@ footer, header, hgroup, menu, nav, section {
     #vignetting {height:100%;width:100%;position:absolute;top:0;left:0;pointer-events:none;}
     #logosparks {display:block;position:absolute;top:0;left:0;}
     #parchment, #parchment input {font-family:'GraphicPixel';}
-    #parchment input {width:50%;background:rgba(0,0,0,0.05);text-align:center;-moz-animation:glow 0.5s linear infinite alternate;-webkit-animation:glow 0.5s linear infinite alternate;-o-animation:glow 0.5s linear infinite alternate;-ms-animation:glow 0.5s linear infinite alternate;color:#eee;}
+    #parchment input {width:50%;background:rgba(0,0,0,0.05);text-align:center;animation:glow 0.5s linear infinite alternate; -moz-animation:glow 0.5s linear infinite alternate;-webkit-animation:glow 0.5s linear infinite alternate;-o-animation:glow 0.5s linear infinite alternate;-ms-animation:glow 0.5s linear infinite alternate;color:#eee;}
     #parchment input:focus {-moz-animation:none;-webkit-animation:none;-o-animation:none;-ms-animation:none;animation:none;color:#fff;background:rgba(0,0,0,0.1);border-color:rgba(0,0,0,0.3);}
 
     #character div {-moz-transition:0.4s opacity linear;-webkit-transition:0.4s opacity linear;-o-transition:0.4s opacity linear;-ms-transition:0.4s opacity linear;transition:0.4s opacity linear;}
@@ -151,13 +151,13 @@ footer, header, hgroup, menu, nav, section {
     #healthbar {background:url('../img/1/barsheet.png');image-rendering:-moz-crisp-edges;position:absolute;}
 	#hitpoints {background:#d83939;-moz-transition:.5s width ease;-webkit-transition:.5s width ease;-o-transition:.5s width ease;-ms-transition:.5s width ease;transition:.5s width ease;}
     #hitpoints.white {-moz-animation:flash 0.5s linear 1;-webkit-animation:flash 0.5s linear 1;-o-animation:flash 0.5s linear 1;-ms-animation:flash 0.5s linear 1;animation:flash 0.5s linear 1;}
-	#hitpoints.invincible {-moz-animation:invincible 0.3s steps(3, end) alternate infinite;-webkit-animation:invincible 0.3s steps(3, end) alternate infinite;-o-animation:invincible 0.3s steps(3, end) alternate infinite;-ms-animation:invincible 0.3s steps(3, end) alternate infinite;}
+	#hitpoints.invincible {animation:invincible 0.3s steps(3, end) alternate infinite; -moz-animation:invincible 0.3s steps(3, end) alternate infinite;-webkit-animation:invincible 0.3s steps(3, end) alternate infinite;-o-animation:invincible 0.3s steps(3, end) alternate infinite;-ms-animation:invincible 0.3s steps(3, end) alternate infinite;}
     
     #notifications {position:absolute;left:50%;text-align:center;font-family:'GraphicPixel';overflow:hidden;}
-    #notifications div {position:absolute;-moz-transition:none;-webkit-transition:none;top:0;width:100%;}
+    #notifications div {position:absolute; transition:none; -moz-transition:none;-webkit-transition:none;top:0;width:100%;}
     #notifications div.top {-moz-transition:0.5s top ease;-webkit-transition:0.5s top ease;-o-transition:0.5s top ease;-ms-transition:0.5s top ease;transition:0.5s top ease;}
     #notifications div.top #message1 {opacity:0;-moz-transition:0.2s opacity linear;-webkit-transition:0.2s opacity linear;-o-transition:0.2s opacity linear;-ms-transition:0.2s opacity linear;transition:0.2s opacity linear;}
-    #notifications span {display:block;text-align:center;width:100%;opacity:1;-moz-user-select:none;-webkit-user-select:none;}
+    #notifications span {display:block;text-align:center;width:100%;opacity:1;user-select:none;-moz-user-select:none;-webkit-user-select:none;}
     
     #playercount {font-family:'GraphicPixel';color:#e3e3e3;position:absolute;}
     #playercount:hover {cursor:pointer;color:#FCE045;}
@@ -168,7 +168,7 @@ footer, header, hgroup, menu, nav, section {
     .barbutton {background:url('../img/1/barsheet.png');image-rendering:-moz-crispt-edges;position:absolute;}
     
     #chatbox {background:url('../img/1/barsheet.png');image-rendering:-moz-crisp-edges;position:absolute;left:50%;z-index:5;-moz-transition:0.2s bottom ease;-webkit-transition:0.2s bottom ease;-o-transition:0.2s bottom ease;-ms-transition:0.2s bottom ease;transition:0.2s bottom ease;}
-    .bubble p {-moz-user-select:none;-webkit-user-select:none;}
+    .bubble p {user-select:none;-moz-user-select:none;-webkit-user-select:none;}
     
     #instructions {position:absolute;top:50%;left:50%;z-index:1000;font-family:'GraphicPixel';pointer-events:none;opacity:0;-moz-transition:0.25s opacity linear;-webkit-transition:0.4s top ease, 0.4s opacity linear;-o-transition:0.4s top ease, 0.4s opacity linear;-ms-transition:0.4s top ease, 0.4s opacity linear;transition:0.4s top ease, 0.4s opacity linear;}
     #instructions.active, #achievements.active {opacity:1;pointer-events:auto;}
@@ -184,7 +184,7 @@ footer, header, hgroup, menu, nav, section {
     #achievements li.unlocked .coin {opacity:1;}
     #achievements .achievement-name {color:#fff;}
     #achievements .achievement-description {float:right;width:65%;}
-    #achievement-notification {position:absolute;z-index:8;bottom:0;left:50%;text-align:center;font-family:'GraphicPixel';pointer-events:none;-moz-transition:0.3s height ease;-webkit-transition:0.3s height ease;-o-transition:0.3s height ease;-ms-transition:0.3s height ease;}
+    #achievement-notification {position:absolute;z-index:8;bottom:0;left:50%;text-align:center;font-family:'GraphicPixel';pointer-events:none;transition:0.3s height ease; -moz-transition:0.3s height ease;-webkit-transition:0.3s height ease;-o-transition:0.3s height ease;-ms-transition:0.3s height ease;}
     #achievement-notification .name, #achievement-notification .title {opacity:0;-moz-transition:0.3s opacity linear;-webkit-transition:0.3s opacity linear;-o-transition:0.3s opacity linear;-ms-transition:0.3s opacity linear;transition:0.3s opacity linear;}
     #achievement-notification.active .name, #achievement-notification.active .title {opacity:1;}
     #achievement-info {overflow:hidden;height:100%;}

@@ -1,4 +1,6 @@
 /*IE stylesheet*/
+/* Just say no to this support. */
+
 
 #container {display:none;}
 body {background:url('../img/2/wood.png') repeat;}
